@@ -49,4 +49,34 @@ fn main() {
         "Saturday",
         "Sunday",
     ];
+
+    let _first_element = _days_of_week[0];
+    let _last_element = _days_of_week[_days_of_week.len() - 1];
+
+    // slices
+
+    let _two_days = &_days_of_week[1..3];
+    let _first_element_of_slice = _two_days[0];
+
+    // tuples
+
+    let _me = ("Emre", 30, true);
+    let _name = _me.0;
+    let _age = _me.1;
+    let _is_cool = _me.2;
+
+    //  unit type
+    let _unit_type = ();
+
+    // variables
+
+    let _my_variable = 10;
+    // dont mutable this variable so you can't change it _my_variable = 20; 
+    // javada final js'te const gibi
+    // default olarak immutable 
+
+    let mut _my_mutable_variable = 10;
+    _my_mutable_variable = 20;
+    //  you can change it because it is mutable variable 
+
 }
