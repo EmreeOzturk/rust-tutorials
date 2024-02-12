@@ -1,18 +1,25 @@
+mod conditions_and_control_flow;
+mod enums;
+mod functions;
+mod loops_and_comditions;
+mod strings;
+mod structs_and_traits;
+mod variables;
 fn main() {
     println!("Hello, world!");
 
-    let x: i32 = 42;
-    let pi: f64 = 3.14159;
-    let is_rust_cool: bool = true;
-    let random_letter: char = 'z';
+    let _x: i32 = 42;
+    let _pi: f64 = 3.14159;
+    let _is_rust_cool: bool = true;
+    let _random_letter: char = 'z';
 
-    fn add_one(x: i32) -> i32 {
+    fn _add_one(x: i32) -> i32 {
         return x + 1;
 
         // or x+1
     }
 
-    fn sum_two_numbers(x: i32, y: i32) -> i32 {
+    fn _sum_two_numbers(x: i32, y: i32) -> i32 {
         return x + y;
 
         // or x+y
@@ -21,12 +28,12 @@ fn main() {
     let x = 4;
 
     if x == 4 {
-        println!("x is 4!");
+        //   println!("x is 4!");
     } else {
         println!("x is not 4 :(");
     }
 
-    println!("x = {}", x); // x = 4
+    // println!("x = {}", x); // x = 4
 
     let mut x = 4;
 
@@ -54,7 +61,7 @@ fn main() {
     let _last_element = _days_of_week[_days_of_week.len() - 1];
 
     // slices
-
+    //  slices are immutable
     let _two_days = &_days_of_week[1..3];
     let _first_element_of_slice = _two_days[0];
 
@@ -71,12 +78,19 @@ fn main() {
     // variables
 
     let _my_variable = 10;
-    // dont mutable this variable so you can't change it _my_variable = 20; 
+    // dont mutable this variable so you can't change it _my_variable = 20;
     // javada final js'te const gibi
-    // default olarak immutable 
+    // default olarak immutable
 
     let mut _my_mutable_variable = 10;
     _my_mutable_variable = 20;
-    //  you can change it because it is mutable variable 
+    //  you can change it because it is mutable variable
 
+    variables::learn_variables();
+    functions::functions();
+    strings::learn_strings();
+    loops_and_comditions::loops_and_comditions();
+    structs_and_traits::structs();
+    enums::enums();
+    conditions_and_control_flow::conditions_and_control();
 }

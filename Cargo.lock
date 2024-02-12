@@ -150,7 +150,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "rustTest"
+name = "rust_test"
 version = "0.1.0"
 dependencies = [
  "cust",
