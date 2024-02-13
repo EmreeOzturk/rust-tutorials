@@ -1,10 +1,21 @@
+use crate::guess_game::guess_game;
+
+
 mod conditions_and_control_flow;
 mod enums;
+mod ex1;
+mod ex4;
+mod ex7;
+mod ex8;
+mod ex9;
 mod functions;
 mod loops_and_comditions;
 mod strings;
 mod structs_and_traits;
 mod variables;
+mod ex11;
+mod ex12;
+mod guess_game;
 fn main() {
     println!("Hello, world!");
 
@@ -93,4 +104,12 @@ fn main() {
     structs_and_traits::structs();
     enums::enums();
     conditions_and_control_flow::conditions_and_control();
+    ex1::ex1();
+    ex4::ex4();
+    ex7::ex7();
+    ex8::ex8();
+    ex9::ex9();
+    ex11::ex11();
+    ex12::ex12();
+    guess_game::guess_game();
 }
